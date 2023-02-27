@@ -32,15 +32,56 @@
                lists effectively take up the width of the screen. This means you have more
                room to display information spanning the width of the card.-->
 
+
         <!-- TODO: Create an ImageView resource for the image of the dog.
                The height should be 194dp
                The width should match the with of the card
                The scaleType should be set to centerCrop-->
+        <ImageView
+            android:id="@+id/image_dog"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:src="@drawable/bella"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- TODO: Create a TextView for each of the following:
                 The dog's name
                 The dog's age
                 The dog's hobbies-->
+
+        <TextView
+            android:id="@+id/name_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="anjing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_dog"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+
+        <TextView
+            android:id="@+id/age_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="usia: 8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_dog"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            />
+        <TextView
+            android:id="@+id/hobbies_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Makan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_dog"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
